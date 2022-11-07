@@ -1,7 +1,7 @@
 {
-  "name": "ecommerce-microservice-gateway",
+  "name": "customer-service",
   "version": "1.0.0",
-  "description": "this is test api gateway system",
+  "description": "this is test api system for customer service",
   "repository": "ecommerce-microservice-gateway",
   "main": "main.js",
   "scripts": {
@@ -11,12 +11,10 @@
   "author": "Georgegoldman",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
     "cli-table": "^0.3.11",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "crypto": "^1.0.1",
     "debug": "^4.3.4",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
@@ -25,8 +23,10 @@
     "jsonwebtoken": "^8.5.1",
     "logger": "^0.0.1",
     "method-override": "^3.0.0",
-    "nodemailer": "^6.7.7",
-    "nodemon": "^2.0.20",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.4",
+    "nodemon": "^2.0.16",
+    "requestretry": "^7.1.0",
     "restify-errors": "^8.0.2",
     "shortid": "^2.2.16",
     "winston": "^3.7.2"

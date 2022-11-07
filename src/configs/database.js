@@ -31,7 +31,7 @@ class Database{
         })
 
         // initialize Model
-        require('../model/customer')
+        require('../model/product')
     }
 }
 

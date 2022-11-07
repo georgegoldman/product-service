@@ -6,16 +6,16 @@ const
 
 const { Schema, model } = mongoose
 
-const customerSchema = Schema({
-    email: {
-        type: String,
+const productSchema = Schema({
+    amount: {
+        type: Number,
         trim: true,
         required: true,
         unique: true,
         lowercase: true
-    }
+    },
 }, {
     timestamps: true
 })
 
-module.exports = model("Customer", customerSchema)
+module.exports = model("Product", productSchema)

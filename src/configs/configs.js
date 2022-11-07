@@ -13,7 +13,7 @@ module.exports = () => ({
         level: process.env.LOG_LEVEL || 'info',
         console: process.env.LOG_ENABLE_CONSOLE,
     },
-    customer:{
+    api:{
         url: process.env.API_GATEWAY,
         timeout: parseInt(process.env.PROTON_SERVICE_TIMEOUT),
         retry: {

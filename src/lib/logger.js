@@ -35,7 +35,7 @@ try {
             return createLogger({
                 transports: createTransports(config),
                 format: combine(
-                    label({label: 'Project ecommerce-microservice-gateway script'}),
+                    label({label: 'Project product service script'}),
                     timestamp(),
                     prettyPrint()
                 )

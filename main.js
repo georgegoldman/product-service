@@ -12,7 +12,7 @@ const
     config = require('./src/configs/configs')(),
     port = config.app.port,
     Database = require('./src/configs/database'),
-    customerRoute = require('./src/routes/customer'),
+    productRoute = require('./src/routes/product'),
     errorHandler = require('./src/middlewares/error_handler')
 
 //initialize database
@@ -25,7 +25,7 @@ app.use(cookieParser())
 app.use(cors())
 
 //init routing
-app.use("/api/v1/customer", customerRoute)
+app.use("/api/v1/product", productRoute)
 
 app.use((err, req, res, next) => {
     errorHandler(err, req, res, next);
